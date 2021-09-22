@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_forall"
+    tools:context=".PostQuestion">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/heading"
+        android:id="@+id/heading">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/back"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="POST"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_centerVertical="true"
+
+            android:textColor="@color/white"
+            android:textSize="20dp"
+             />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:text="Choose a category"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:id="@+id/chooseCategory"
+        android:textColor="#879099"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/horizontal_only"
+        android:scrollbars="none"
+        android:padding="10dp"
+        android:layout_below="@+id/chooseCategory">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_regular"                android:text="Java"
+                android:gravity="center"
+
+                android:background="@drawable/custom_btn2"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="3dp"
+                android:id="@+id/Java"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_regular"                android:gravity="center"
+                android:background="@drawable/custom_btn2"
+                android:text="Kotlin"
+
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Kotlin"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_regular"                android:gravity="center"
+                android:background="@drawable/custom_btn2"
+                android:text="Flutter"
+
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Flutter"/>
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_regular"
+
+                android:gravity="center"
+                android:background="@drawable/custom_btn2"
+                android:text="Python"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Python"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:background="@drawable/custom_btn2"
+                android:text="Swift"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Swift"/>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_regular"                android:gravity="center"
+                android:background="@drawable/custom_btn2"
+                android:text="React Native"
+
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ReactNative"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:background="@drawable/custom_btn2"
+                android:text="JavaScript"
+
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/JavaScript"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_regular"                android:gravity="center"
+                android:background="@drawable/custom_btn2"
+                android:text="Ionic"
+
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Ionic"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_regular"                android:gravity="center"
+                android:background="@drawable/custom_btn2"
+                android:text="HTML"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/HTML"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:background="@drawable/custom_btn2"
+                android:text="CSS"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/CSS"/>
+
+        </LinearLayout>
+
+
+
+
+    </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontal_only"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_button1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Tips on making questions"
+            android:textColor="#707070"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="fill_horizontal"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#8A94A6"
+            android:text="• Make sure the question is short and to \n  point"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="fill_horizontal"
+            android:textColor="#8A94A6"
+            android:text="• Doubly check grammar and spelling"
+
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layout2"
+            android:layout_marginTop="20dp"
+            android:background="#E1E4E5" />
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/layout2"
+
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button1">
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txt1"
+
+                android:layout_margin="10dp"
+                android:background="#FAFBFC"
+                android:hint="Write your question"
+                android:maxLength="100"
+                android:textSize="16sp" />
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/btn_forok"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="Post Now"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+
+
+
+
+
+</RelativeLayout>

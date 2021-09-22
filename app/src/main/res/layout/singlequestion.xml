@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/custom_button1"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp"
+
+
+
+    >
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:id="@+id/questions"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp"
+        android:layout_below="@+id/questions"
+        android:id="@+id/language"/>
+
+    <TextView
+        android:id="@+id/giveanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questions"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/custom_btn2"
+        android:padding="10dp"
+        android:text="Answer"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>
